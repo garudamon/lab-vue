@@ -1,0 +1,20 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  // for more information about vue breaking docs: https://vuejs.org/v2/cookbook/debugging-in-vscode.html
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome", // please refer to your vscode generated key
+      "request": "launch",
+      "name": "vuejs: chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/src",
+      "breakOnLoad": true,
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
+    }
+  ]
+}
